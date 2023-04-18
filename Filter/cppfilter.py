@@ -93,6 +93,8 @@ class CodeParser():
         """ De-verbosifies std::cout & std::cin statements """
         for key, value in IO__.items():
             self.function.lines: str = self.repl(self.function.lines, key, value)
+            
+        #! Iterate once more, removing whitespace between "std::cout << (..." & a string literal
         print(self.function.lines)
         
     def rmTryComments(self) -> None:
