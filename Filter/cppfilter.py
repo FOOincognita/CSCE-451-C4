@@ -36,6 +36,7 @@ IO__: dict[str, str] = {
     "pbVar1 = std::operator<<(pbVar1,":"std::cout << (",
     "pbVar1 = std::operator<<((basic_ostream *)std::cout,\n":"std::cout << (",
     "std::operator<<((basic_ostream *)std::cout,":"std::cout << (",
+    "std::operator>>((basic_istream *)std::cin,&":"std::cin >> (",
     "std::operator>>((basic_istream *)std::cin,":"std::cin >> (",
     "pbVar1 = std::operator<<((basic_ostream *)std::cout,":"std::cout << (",
     "std::basic_ostream<char,std::char_traits<char>>::operator<<\n              ((basic_ostream<char,std::char_traits<char>> *)pbVar1,\n               std::endl<char,std::char_traits<char>>);":"std::cout << std::endl;",
@@ -137,6 +138,8 @@ def main() -> None:
     
 """
     # IDEAS FOR THIS PROGRAM
+        * Use strip to get rid of unessesary whitespace
+            >> Use ';', '{...}', '"..."' patterns to protect strings
 
     # IDEAS FOR C4:
         * Rich Note-taking 
