@@ -143,6 +143,10 @@ def main() -> None:
             ? Markdown Editor
             ? Pygmentize for C/C++ (Or Markdown Codeblocks :3)
             ? https://pypi.org/project/pervane/
+            
+        * SYSCALL Finder
+        
+        * Socket Analyzer
     
 """
     
